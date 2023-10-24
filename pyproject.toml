@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ranker"
+version = "0.1.0"
+description = ""
+authors = ["Bal Narendra Sapa <bnsapa2000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+flask-login = "0.5.0"
+flask-sqlalchemy = "2.5.1"
+flask-wtf = "0.14.3"
+flask = "1.1.2"
+jinja2 = "2.11.0"
+markupsafe = "2.0.1"
+itsdangerous = "2.0.1"
+werkzeug = "2.0.3"
+sqlalchemy = "1.4.3"
+email-validator = "^2.1.0.post1"
+flask-mail = "^0.9.1"
+bs4 = "^0.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
