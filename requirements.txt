@@ -1,5 +1,5 @@
 poetry
 flask
 flask-wtf
-flask-login
+flask-login==0.5.0
 flask-sqlalchemy
