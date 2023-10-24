@@ -2,4 +2,4 @@ poetry
 flask
 flask-wtf
 flask-login==0.5.0
-flask-sqlalchemy
+flask-sqlalchemy==2.4.2
