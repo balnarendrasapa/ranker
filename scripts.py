@@ -19,9 +19,9 @@ class Query():
             self.r.append(rating.text)
             self.im.append(image.get('src'))
             if(site=="amazon"):
-                self.u.append('https://www.amazon.in/'+url.get("href"))
+                self.u.append('https://www.amazon.com/'+url.get("href"))
             else:
-                self.u.append('https://www.flipkart.in/'+url.get("href"))
+                self.u.append('https://www.flipkart.com/'+url.get("href"))
             
             flag=0
         
@@ -42,7 +42,7 @@ class Query():
 
         
         item = "+".join(item.split(" "))
-        url = "https://www.amazon.in/s?k="+item+"&ref=nb_sb_noss_2"
+        url = "https://www.amazon.com/s?k="+item+"&ref=nb_sb_noss_1"
 
 
         opener = urllib.request.Request(url)
@@ -67,7 +67,7 @@ class Query():
         ctx = ssl.create_default_context()
         ctx.check_hostname = False
         ctx.verify_mode = ssl.CERT_NONE
-        url = "https://www.flipkart.com/search?q="+item+"&&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+        url = "https://www.flipkart.com/search?q="+item+"&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
         # print(url)
 
         opener = urllib.request.Request(url)
