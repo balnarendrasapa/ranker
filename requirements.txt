@@ -1,4 +1,5 @@
 poetry
 flask
 flask-wtf
+flask-login
 flask-sqlalchemy
